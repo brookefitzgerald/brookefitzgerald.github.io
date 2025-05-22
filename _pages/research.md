@@ -19,4 +19,8 @@ author_profile: true
 
 ## Extras
 ![Deep Kriging](/files/aod_470_2021.gif)
-Due to cloud cover, satellite data often has missing data. To use algorithms that take spatial information into account requires filling in that missing data. This gif is the result of interpolating aerosol optical depth using Deep Kriging - a method that fits a smooth surface to data from non-linear combination of spatial basis functions with deep learning. 
+Due to cloud cover, satellite data often has missing data. To use algorithms that take spatial information into account requires filling in that missing data. This gif is the result of interpolating aerosol optical depth using Deep Kriging - a method that fits a smooth surface to data from non-linear combination of spatial basis functions with deep learning.
+
+
+![Cytospora Tool](/files/CytosporaTool.gif)
+I made a tool that simulates the probabalistic spread of a disease in an orchard using Monte Carlo simulation, while also allowing users to explore the underlying simulation. The tool is public at [orcharddiseasetool.net](https://bfit.shinyapps.io/cytospora/).
