@@ -6,8 +6,23 @@ redirect_from:
   - /about/
   - /about.html
 ---
+---
+permalink: /
+title: "About"
+layout: page
+redirect_from: 
+  - /about/
+  - /about.html
+---
 
-<div style="display: grid; grid-template-columns: 55% 45%; gap: 2rem; align-items: start;">
+<style>
+  @media (max-width: 768px) {
+    .responsive-grid {
+      display: block !important;
+    }
+  }
+</style>
+<div class="responsive-grid" style="display: grid; grid-template-columns: 55% 45%; gap: 2rem; align-items: start;">
   <div style="width: 80%; margin: 0 auto;">
     <h2>About Brooke</h2>
     <p>I’m beginning my fourth year as a Ph.D. student in Agricultural and Resource Economics at Colorado State University. I received my bachelors degree in Data Science and Applied Mathematics at <a href="https://www.hampshire.edu/">Hampshire College</a>. I worked as a data scientist for three years before beginning my Ph.D. in the <a href="https://agsci.colostate.edu/dare/">Agricultural and Resource Economics Department</a> at Colorado State University.</p>
@@ -18,7 +33,7 @@ redirect_from:
 
     <p style="margin-top: 2rem;">
       <a href="mailto:brooke.fitzgerald@colostate.edu" style="text-decoration: none;">
-        <i class="fas fa-envelope"></i> brooke.fitzgerald@colostate.edu
+        <i class="fas fa-envelope"></i> Get in touch!
       </a>
     </p>
   </div>
