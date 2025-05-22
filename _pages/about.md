@@ -6,14 +6,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
----
-permalink: /
-title: "About"
-layout: page
-redirect_from: 
-  - /about/
-  - /about.html
----
 
 <style>
   @media (max-width: 768px) {
@@ -33,7 +25,7 @@ redirect_from:
 
     <p style="margin-top: 2rem;">
       <a href="mailto:brooke.fitzgerald@colostate.edu" style="text-decoration: none;">
-        <i class="fas fa-envelope"></i> Get in touch!
+        Get in touch: <i class="fas fa-envelope"></i>
       </a>
     </p>
   </div>
