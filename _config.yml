@@ -151,6 +151,7 @@ analytics:
   google:
     tracking_id          : "G-4QXBHSK0VH"
 
+minimal_mistakes_skin: "default"
 
 # Reading Files
 include:
