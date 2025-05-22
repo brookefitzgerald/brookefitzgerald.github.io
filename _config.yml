@@ -12,7 +12,8 @@ site_theme               : "default"
 title                    : "Brooke Fitzgerald"
 title_separator          : "-"
 name                     : &name "Brooke Fitzgerald"
-description              : &description "Environmental economics | Data science"
+description              : &description "Environmental Economics //
+Data Science"
 url                      : https://brookefitzgerald.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "brookefitzgerald/brookefitzgerald.github.io"
@@ -24,7 +25,8 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Brooke Fitzgerald"
-  bio              : "Environmental economics | Data science"
+  bio              : "Environmental Economics //
+Data Science"
   location         : "Fort Collins, CO"
   employer         : "Colorado State University"
   uri              : # URL
