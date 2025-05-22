@@ -17,6 +17,6 @@ Measurement of PM2.5 from Wildfire Smoke: Implications for econometric analyses 
 *With Jesse Bukhardt, Alexandra Hill, and Jude Bayham*
 
 
-### Fun Stuff
+### Extras
 ![Deep Kriging](/files/aod_470_2021.gif)
-Due to cloud cover, satellite data often has missing data. Algorithms that take spatial information into account require filling that missing data. This gif demonstrates the results of interpolating aerosol optical depth for the month of August 2021 using Deep Kriging - a method that fits a spatially smooth, but non-linear surface to existing data using deep learning and spatial basis functions. 
+Due to cloud cover, satellite data often has missing data. To use algorithms that take spatial information into account requires filling in that missing data. This gif is the result of interpolating aerosol optical depth for the month of August 2021 using Deep Kriging - a method that fits a smooth surface to data from non-linear combination of spatial basis functions using deep learning. 
