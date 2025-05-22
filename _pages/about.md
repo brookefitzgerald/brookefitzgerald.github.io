@@ -25,7 +25,7 @@ redirect_from:
 
     <p style="margin-top: 2rem;">
       <a href="mailto:brooke.fitzgerald@colostate.edu" style="text-decoration: none;">
-        Get in touch: <i class="fas fa-envelope"></i>
+        Get in touch <i class="fas fa-envelope"></i>
       </a>
     </p>
   </div>
