@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 
-<a href="/files/FitzgeraldCV_2025_grad_2026.pdf" class="btn btn-primary" role="button" style="margin-top: 1em;">
+<a href="/files/FitzgeraldCV_2025_grad_2026.pdf" class="btn btn-primary" role="button" style="margin-top: 1em; text-decoration: none;">
   Download CV <i class="fas fa-download"></i>
 </a>
 
