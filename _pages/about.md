@@ -30,6 +30,6 @@ redirect_from:
     </p>
   </div>
   <div style="display: flex; justify-content: center; align-items: center;">
-    <img src="/files/main_page_photo.jpg" alt="Brooke Fitzgerald" style="width: 100%; height: auto; border-radius: 8px;">
+    <img src="/files/main_page_photo.png" alt="Brooke Fitzgerald" style="width: 100%; height: auto; border-radius: 8px;">
   </div>
 </div>
