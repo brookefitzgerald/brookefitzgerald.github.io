@@ -7,7 +7,7 @@ author_profile: true
 ## Working Papers
 
 <div class="paper">
-  <p class="paper__title"><strong>The Price of Staying In: Estimating Wildfire Smoke Avoidance Costs Using Comprehensive US Mobility and Spending Data.</strong></p>
+  <p class="paper__title"><strong>The Price of Staying In: Estimating Wildfire Smoke Avoidance Costs Using Comprehensive US Mobility and Spending Data</strong></p>
   <p class="paper__authors">With Jude Bayham, Alexandra Hill, and Jesse Burkhardt</p>
   <p class="paper__meta"><a href="https://brookefitzgerald.com/files/Avoidance_Paper_draft_10_2026.pdf">Draft</a><span class="paper__meta-sep">|</span>Submitted</p>
   <details class="paper__abstract">
@@ -25,7 +25,7 @@ author_profile: true
 </div>
 
 <div class="paper">
-  <p class="paper__title"><strong>Measuring Wildfire Smoke and PM<sub>2.5</sub>: Implications for Estimates of Economic Damages.</strong></p>
+  <p class="paper__title"><strong>Measuring Wildfire Smoke and PM<sub>2.5</sub>: Implications for Estimates of Economic Damages</strong></p>
   <p class="paper__authors">With Jesse Bukhardt, Alexandra Hill, and Jude Bayham</p>
   <p class="paper__meta">Draft available upon request</p>
   <details class="paper__abstract">
@@ -41,7 +41,7 @@ author_profile: true
 ## Works in Progress
 
 <div class="paper">
-  <p class="paper__title"><strong>Is that Smoke in the Air? Estimating the Global Economic Cost of Smoke Exposure.</strong></p>
+  <p class="paper__title"><strong>Is that Smoke in the Air? Estimating the Global Economic Cost of Smoke Exposure Using Machine Learning</strong></p>
   <p class="paper__authors">With Jesse Burkhardt, Kimberly Corwin, Yawen Guan, Emily Fischer, and Jeffrey Pierce</p>
 </div>
 
