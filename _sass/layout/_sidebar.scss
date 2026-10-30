@@ -262,3 +262,83 @@
     }
   }
 }
+
+/* Once the sidebar is fixed it is sized against the viewport rather than the
+   content container, so it renders wider than the gutter the layout reserves
+   for it, and its links sit over the page content and swallow clicks meant
+   for the text. Hold it to that gutter and let long labels wrap rather than
+   run past it. The gutter is ~151px below $x-large and ~208px above it, where
+   the layout gives the sidebar more room. This has to come after the
+   .author__urls rules above, which set white-space: nowrap. */
+@media screen and (min-width: $sidebar-screen-min-width) {
+  .sidebar {
+    max-width: 150px;
+  }
+
+  .author__urls li {
+    white-space: normal;
+  }
+
+  .author__urls a {
+    overflow-wrap: break-word;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sidebar {
+    max-width: 200px;
+  }
+}
+
+/* Below $large the author block sits above the page content rather than
+   beside it. Pin it under the masthead so it stays put while the page
+   scrolls, and keep the Follow menu shut until it is asked for.
+   jQuery's resize handler can leave an inline display:block on
+   .author__urls when the window crosses $large, which is what leaves the
+   menu hanging open over the content, so drive visibility from the .open
+   class the button already toggles instead of from that inline style. */
+@media screen and (max-width: 924px) {
+  .sidebar {
+    position: sticky;
+    top: 3.5rem; // the masthead is 3.5rem tall at every root font size
+    z-index: 15; // under the masthead (20), over the page content
+    margin-bottom: 0;
+    padding: 0.5em 0;
+    background-color: var(--global-bg-color);
+    border-bottom: 1px solid var(--global-border-color);
+  }
+
+  .author__urls {
+    display: none !important;
+  }
+
+  .author__urls-wrapper button.open + .author__urls {
+    display: block !important;
+  }
+}
+
+/* Chevron on the Follow button, matching the abstract toggles. */
+.author__urls-wrapper button {
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    margin-left: 0.5em;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: translateY(-0.15em) rotate(45deg);
+    transition: $global-transition;
+  }
+
+  &.open::after {
+    transform: translateY(0.1em) rotate(-135deg);
+  }
+}
+
+/* The location and employer lines are hidden below 1024px by the rule above.
+   Keep them wherever the rest of the author list shows, so they stay
+   available on narrow screens instead of dropping off entirely. */
+.sidebar .author__desktop {
+  display: block;
+}
