@@ -16,6 +16,15 @@ redirect_from:
     border-radius: 8px;
   }
 
+  .contact-link {
+    text-decoration: none;
+  }
+
+  /* Same muted grey as the coauthor lines on the research page. */
+  .contact-address {
+    color: var(--global-text-color-light);
+  }
+
   /* Side by side: cap the photo by height so the whole of it fits on
      screen, narrowing it within its column rather than running past the
      fold. The flex parent centres it, leaving space either side. */
@@ -43,9 +52,8 @@ redirect_from:
     <p>I’m also committed to making economics more inclusive, serving as a graduate liaison for the Women in Economics group and representing students in my department. Through research and outreach, I aim to inform equitable, data-driven environmental policy.</p>
 
     <p style="margin-top: 2rem;">
-      <a href="mailto:brooke.fitzgerald@colostate.edu" style="text-decoration: none;">
-        Get in touch <i class="fas fa-envelope"></i>
-      </a>
+      <a href="mailto:brooke.fitzgerald@colostate.edu" class="contact-link">Get in touch <i class="fas fa-envelope"></i></a>
+      <span class="contact-address">brooke.fitzgerald(at)colostate(dot)edu</span>
     </p>
 
   </div>
