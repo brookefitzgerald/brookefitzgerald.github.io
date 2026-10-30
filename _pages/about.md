@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "About"
-layout: page
+layout: default
 redirect_from:
 
 - /about/
@@ -10,6 +10,23 @@ redirect_from:
 ---
 
 <style>
+  .intro-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  /* Side by side: cap the photo by height so the whole of it fits on
+     screen, narrowing it within its column rather than running past the
+     fold. The flex parent centres it, leaving space either side. */
+  @media (min-width: 769px) {
+    .intro-photo {
+      width: auto;
+      max-width: 100%;
+      max-height: calc(100vh - 7rem);
+    }
+  }
+
   @media (max-width: 768px) {
     .responsive-grid {
       display: block !important;
@@ -33,6 +50,6 @@ redirect_from:
 
   </div>
   <div style="display: flex; justify-content: center; align-items: center;">
-    <img src="/files/main_page_photo.png" alt="Brooke Fitzgerald" style="width: 100%; height: auto; border-radius: 8px;">
+    <img src="/files/main_page_photo.png" alt="Brooke Fitzgerald" class="intro-photo">
   </div>
 </div>
