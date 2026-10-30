@@ -1,0 +1,168 @@
+/* ==========================================================================
+   PAPERS
+   Research listing: title, coauthors, and an abstract that expands from a
+   toggle button, optionally alongside a figure.
+   ========================================================================== */
+
+.paper {
+  margin-bottom: 2em;
+}
+
+.paper__title {
+  margin-bottom: 0.15em;
+}
+
+.paper__authors {
+  margin-top: 0;
+  margin-bottom: 0.15em;
+  font-style: italic;
+  color: var(--global-text-color-light);
+}
+
+/* Draft link and publication status, set like the abstract toggle */
+.paper__meta {
+  margin-top: 0;
+  margin-bottom: 0.35em;
+  font-family: $sans-serif-narrow;
+  font-size: $type-size-6;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+
+  /* overrides the blanket underline and link color on .archive a */
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:visited {
+      color: inherit;
+    }
+
+    &:hover {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+}
+
+.paper__meta-sep {
+  margin: 0 0.5em;
+  opacity: 0.6;
+}
+
+/* The toggle button
+   ========================================================================== */
+
+.paper__abstract {
+  > summary {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.2em 0;
+    font-family: $sans-serif-narrow;
+    font-size: $type-size-6;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--global-link-color);
+    list-style: none;
+    transition: $global-transition;
+
+    &:hover {
+      color: var(--global-link-color-hover);
+    }
+
+    /* hide the native disclosure triangle */
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::marker {
+      content: "";
+    }
+  }
+}
+
+.paper__chevron {
+  display: inline-block;
+  flex: none;
+  width: 0.5em;
+  height: 0.5em;
+  margin-left: 0.5em;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-0.15em) rotate(45deg);
+  transform-origin: center;
+  transition: $global-transition;
+}
+
+.paper__abstract[open] > summary .paper__chevron {
+  transform: translateY(0.1em) rotate(-135deg);
+}
+
+/* The revealed abstract, with an optional figure beside it
+   ========================================================================== */
+
+.paper__body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1em 1.5em;
+  align-items: start;
+  margin-top: 0.5em;
+  animation: paper-reveal 0.2s ease-out;
+
+  p {
+    margin-top: 0;
+  }
+
+  > *:last-child p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.paper__body--with-figure {
+  @include breakpoint($medium) {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+
+.paper__figure {
+  margin: 0;
+
+  img {
+    width: 100%;
+    border: 1px solid var(--global-border-color);
+    border-radius: $border-radius;
+    background-color: #fff;
+  }
+
+  figcaption {
+    margin-top: 0.5em;
+    font-family: $caption-font-family;
+    font-size: $type-size-6;
+    color: var(--global-fig-caption-color);
+  }
+}
+
+@keyframes paper-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-0.25em);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .paper__body {
+    animation: none;
+  }
+
+  .paper__chevron {
+    transition: none;
+  }
+}
