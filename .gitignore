@@ -15,3 +15,5 @@ package-lock.json
 # Ignore the vendor file and bundle for alternative installation
 vendor/
 .bundle/
+# Large video files (host on YouTube instead)
+files/*.mp4
