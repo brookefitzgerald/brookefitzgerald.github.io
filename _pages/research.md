@@ -9,7 +9,7 @@ author_profile: true
 <div class="paper">
   <p class="paper__title"><strong>The Price of Staying In: Estimating Wildfire Smoke Avoidance Costs Using Comprehensive US Mobility and Spending Data</strong></p>
   <p class="paper__authors">With Jude Bayham, Alexandra Hill, and Jesse Burkhardt</p>
-  <p class="paper__meta"><a href="https://brookefitzgerald.com/files/Avoidance_Paper_draft_10_2026.pdf">Draft</a><span class="paper__meta-sep">|</span>Submitted</p>
+  <p class="paper__meta"><a href="https://brookefitzgerald.com/files/Avoidance_Paper_Draft_11_26.pdf">Draft</a><span class="paper__meta-sep">|</span>Submitted</p>
   <details class="paper__abstract">
     <summary>Abstract<span class="paper__chevron"></span></summary>
     <div class="paper__body paper__body--with-figure">
