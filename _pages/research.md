@@ -65,4 +65,4 @@ Due to cloud cover, satellite data often has missing data. To use algorithms tha
 
 ![Cytospora Tool](/files/CytosporaTool.gif)
 
-Collaborating with plant pathologist Dr. Jane Stewart and agricultural economist Dr. Dana Hoag, I developed a tool that simulates the probabalistic spread of a disease in an orchard using Monte Carlo simulation, while also allowing users to explore the underlying simulation logic. The tool is publically available at [orcharddiseasetool.net](https://bfit.shinyapps.io/cytospora/).
+Collaborating with plant pathologist Dr. Jane Stewart and agricultural economist Dr. Dana Hoag, I developed a tool that simulates the probabalistic spread of a disease in an orchard using Monte Carlo simulation, while also allowing users to explore the underlying simulation logic. The tool is publically available at [orcharddiseasetool.net](https://orcharddiseasetool.net/).
